@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajee | Inteligência Patrimonial Preditiva</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="glass-nav">
+        <div class="container nav-flex">
+            <div class="logo">CAJEE<span>.</span></div>
+            <nav>
+                <a href="#blog">Blog</a>
+                <a href="#tecnologia">Algoritmo</a>
+                <a href="#funciona">Metodologia</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-premium">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <span class="badge">CONSÓRCIO 4.0</span>
+                <h1>Seu patrimônio com <span>ciência de dados.</span></h1>
+                <p>A Cajee utiliza tecnologia preditiva para identificar grupos com janelas de contemplação acelerada e o menor custo efetivo do mercado.</p>
+            </div>
+
+            <div class="sim-card-main" id="simulador">
+                <div class="intent-selector">
+                    <button class="intent-btn active" data-type="casa">🏠 Imóvel</button>
+                    <button class="intent-btn" data-type="carro">🚗 Carro</button>
+                    <button class="intent-btn" data-type="caminhao">🚚 Pesados</button>
+                    <button class="intent-btn" data-type="servico">✈️ Viagem</button>
+                </div>
+
+                <div class="display-container">
+                    <small id="intent-label">CRÉDITO PARA IMÓVEL</small>
+                    <h2 id="valor-txt">R$ 500.000</h2>
+                </div>
+
+                <input type="range" id="range-sim" class="slider-fintech">
+                
+                <div class="predictive-box">
+                    <div class="predict-item">
+                        <span>Custo Efetivo</span>
+                        <strong>Taxa Otimizada</strong>
+                    </div>
+                    <div class="predict-item">
+                        <span>Contemplação</span>
+                        <strong class="green-text">Previsível</strong>
+                    </div>
+                </div>
+
+                <button class="btn-main-gradient" onclick="openModal()">OBTER ANÁLISE PREDITIVA</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="container blog-section">
+        <h2 class="section-title">Educação e Estratégia</h2>
+        <div class="blog-grid">
+            <a href="https://blog.cajee.com.br/consorcio-vs-financiamento" target="_blank" class="blog-card">
+                <div class="blog-img" style="background-image: url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=600&q=80');"></div>
+                <div class="blog-content">
+                    <span class="blog-tag">ESTRATÉGIA</span>
+                    <h3>Consórcio vs Financiamento</h3>
+                    <p>Por que o Custo Efetivo Total do consórcio protege seu capital contra juros bancários.</p>
+                </div>
+            </a>
+            <a href="https://blog.cajee.com.br/matematica-do-lance" target="_blank" class="blog-card">
+                <div class="blog-img" style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80');"></div>
+                <div class="blog-content">
+                    <span class="blog-tag">TECNOLOGIA</span>
+                    <h3>A Matemática da Vitória</h3>
+                    <p>Como algoritmos analisam grupos para prever janelas de oportunidade para lances.</p>
+                </div>
+            </a>
+            <a href="https://blog.cajee.com.br/alavancagem-imobiliaria" target="_blank" class="blog-card">
+                <div class="blog-img" style="background-image: url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=600&q=80');"></div>
+                <div class="blog-content">
+                    <span class="blog-tag">INVESTIMENTO</span>
+                    <h3>Alavancagem com Imóveis</h3>
+                    <p>Use o consórcio para construir uma carteira de aluguel sem depender de capital próprio.</p>
+                </div>
+            </a>
+            <a href="https://blog.cajee.com.br/logistica-inteligente" target="_blank" class="blog-card">
+                <div class="blog-img" style="background-image: url('https://images.unsplash.com/photo-1586191582151-f746bc18368d?auto=format&fit=crop&w=600&q=80');"></div>
+                <div class="blog-content">
+                    <span class="blog-tag">PESADOS</span>
+                    <h3>Renovação de Frota</h3>
+                    <p>Como empresas utilizam o consórcio preditivo para manter frotas sempre novas e produtivas.</p>
+                </div>
+            </a>
+            <a href="https://blog.cajee.com.br/liberdade-financeira" target="_blank" class="blog-card">
+                <div class="blog-img" style="background-image: url('https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&w=600&q=80');"></div>
+                <div class="blog-content">
+                    <span class="blog-tag">CULTURA</span>
+                    <h3>O Poder do Planejamento</h3>
+                    <p>A psicologia por trás de quem conquista grandes bens através da paciência estratégica.</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <div id="modalLead" class="modal-overlay">
+        <div class="modal-premium">
+            <button class="close-premium" onclick="closeModal()" aria-label="Fechar">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M18 6L6 18M6 6l12 12"/></svg>
+            </button>
+            
+            <div class="modal-visual" id="modal-bg-img">
+                <div class="visual-content">
+                    <span class="badge-white" id="modal-tag">IMÓVEIS</span>
+                    <h2>Temos grupos prontos para você.</h2>
+                    <p>Análise disponível para <strong id="val-modal"></strong>.</p>
+                </div>
+            </div>
+            
+            <div class="modal-form-area">
+                <div class="form-header">
+                    <h3>Quase lá! 🚀</h3>
+                    <p>Preencha os dados e receba a tabela preditiva no seu WhatsApp agora.</p>
+                </div>
+                <form id="form-final">
+                    <div class="input-field">
+                        <input type="text" placeholder="Seu nome" required>
+                    </div>
+                    <div class="input-field">
+                        <input type="tel" placeholder="Seu WhatsApp" required>
+                    </div>
+                    <button type="submit" class="btn-main-gradient">RECEBER TABELA PREDITIVA</button>
+                    <p class="security-text">🔒 Conexão segura e privada</p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
