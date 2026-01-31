@@ -12,12 +12,12 @@ const categories = {
     caminhao: {
         min: 250000, max: 1500000, step: 20000, def: 460000,
         tag: "PESADOS", label: "CRÉDITO PARA CAMINHÃO",
-        img: "https://images.unsplash.com/photo-1591768793355-74d7c504c3f7?auto=format&fit=crop&w=1200&q=80"
+        img: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1200&q=80"
     },
     servico: {
         min: 10000, max: 120000, step: 1000, def: 25000,
         tag: "SERVIÇOS", label: "CRÉDITO PARA VIAGEM/SERVIÇOS",
-        img: "https://images.unsplash.com/photo-1500835595353-b0d801ca260e?auto=format&fit=crop&w=1200&q=80"
+        img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
     }
 };
 

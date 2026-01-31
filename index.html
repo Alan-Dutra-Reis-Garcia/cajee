@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cajee | Inteligência Patrimonial Preditiva</title>
+    <title>Cajee | Realize seu Sonho sem Juros</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
@@ -13,9 +13,10 @@
         <div class="container nav-flex">
             <div class="logo">CAJEE<span>.</span></div>
             <nav>
-                <a href="#blog">Blog</a>
-                <a href="#tecnologia">Algoritmo</a>
-                <a href="#funciona">Metodologia</a>
+                <a href="#simulador">Simular Agora</a>
+                <a href="#funciona">Como Funciona</a>
+                <a href="#beneficios">Vantagens</a>
+                <a href="#blog">Dicas</a>
             </nav>
         </div>
     </header>
@@ -23,21 +24,25 @@
     <section class="hero-premium">
         <div class="container hero-grid">
             <div class="hero-text">
-                <span class="badge">CONSÓRCIO 4.0</span>
-                <h1>Seu patrimônio com <span>ciência de dados.</span></h1>
-                <p>A Cajee utiliza tecnologia preditiva para identificar grupos com janelas de contemplação acelerada e o menor custo efetivo do mercado.</p>
+                <span class="badge">PLANEJAMENTO INTELIGENTE</span>
+                <h1>O caminho mais rápido para o seu <span>novo patrimônio.</span></h1>
+                <p>Fuja dos juros bancários. Descubra como comprar seu imóvel ou veículo com parcelas reduzidas e planos sob medida para você.</p>
+                
+                <div class="trust-indicators" style="margin-top: 20px; font-size: 0.9rem; opacity: 0.8;">
+                    <span>✓ Sem Juros</span> <br> <span>✓ Sem Entrada</span> <br> <span>✓ Menores Taxas</span><br>
+                </div>
             </div>
 
             <div class="sim-card-main" id="simulador">
                 <div class="intent-selector">
                     <button class="intent-btn active" data-type="casa">🏠 Imóvel</button>
-                    <button class="intent-btn" data-type="carro">🚗 Carro</button>
+                    <button class="intent-btn" data-type="carro">🚗 Veículo</button>
                     <button class="intent-btn" data-type="caminhao">🚚 Pesados</button>
-                    <button class="intent-btn" data-type="servico">✈️ Viagem</button>
+                    <button class="intent-btn" data-type="servico">✈️ Serviços</button>
                 </div>
 
                 <div class="display-container">
-                    <small id="intent-label">CRÉDITO PARA IMÓVEL</small>
+                    <small id="intent-label">QUERO UM CRÉDITO DE:</small>
                     <h2 id="valor-txt">R$ 500.000</h2>
                 </div>
 
@@ -45,61 +50,51 @@
                 
                 <div class="predictive-box">
                     <div class="predict-item">
-                        <span>Custo Efetivo</span>
-                        <strong>Taxa Otimizada</strong>
+                        <span>Economia Estimada</span>
+                        <strong class="green-text">Até 60% vs Banco</strong>
                     </div>
                     <div class="predict-item">
-                        <span>Contemplação</span>
-                        <strong class="green-text">Previsível</strong>
+                        <span>Status</span>
+                        <strong>Grupos com Vagas</strong>
                     </div>
                 </div>
 
-                <button class="btn-main-gradient" onclick="openModal()">OBTER ANÁLISE PREDITIVA</button>
+                <button class="btn-main-gradient" onclick="openModal()">VER MINHA SIMULAÇÃO AGORA</button>
+                <p style="text-align: center; font-size: 0.75rem; margin-top: 10px; color: #666;">Resultado imediato via WhatsApp</p>
             </div>
         </div>
     </section>
-
+    
     <section id="blog" class="container blog-section">
-        <h2 class="section-title">Educação e Estratégia</h2>
+        <h2 class="section-title">Como ajudamos você a conquistar mais</h2>
         <div class="blog-grid">
-            <a href="https://blog.cajee.com.br/consorcio-vs-financiamento" target="_blank" class="blog-card">
+            <a href="consorcio-vs-financiamento.html" class="blog-card">
                 <div class="blog-img" style="background-image: url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=600&q=80');"></div>
                 <div class="blog-content">
-                    <span class="blog-tag">ESTRATÉGIA</span>
-                    <h3>Consórcio vs Financiamento</h3>
-                    <p>Por que o Custo Efetivo Total do consórcio protege seu capital contra juros bancários.</p>
+                    <span class="blog-tag">ECONOMIA</span>
+                    <h3>Adeus Juros Bancários</h3>
+                    <p>Veja o comparativo real e entenda por que o planejamento é 3x mais barato que o banco.</p>
+                    <span class="read-more">Ver comparativo →</span>
                 </div>
             </a>
-            <a href="https://blog.cajee.com.br/matematica-do-lance" target="_blank" class="blog-card">
+
+            <a href="matematica-do-lance.html" class="blog-card">
                 <div class="blog-img" style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80');"></div>
                 <div class="blog-content">
-                    <span class="blog-tag">TECNOLOGIA</span>
-                    <h3>A Matemática da Vitória</h3>
-                    <p>Como algoritmos analisam grupos para prever janelas de oportunidade para lances.</p>
+                    <span class="blog-tag">AGILIDADE</span>
+                    <h3>Acelere sua Entrega</h3>
+                    <p>Saiba como usar o Lance Inteligente para pegar suas chaves sem depender apenas da sorte.</p>
+                    <span class="read-more">Como funciona o lance →</span>
                 </div>
             </a>
-            <a href="https://blog.cajee.com.br/alavancagem-imobiliaria" target="_blank" class="blog-card">
+
+            <a href="alavancagem-imobiliaria.html" class="blog-card">
                 <div class="blog-img" style="background-image: url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=600&q=80');"></div>
                 <div class="blog-content">
                     <span class="blog-tag">INVESTIMENTO</span>
-                    <h3>Alavancagem com Imóveis</h3>
-                    <p>Use o consórcio para construir uma carteira de aluguel sem depender de capital próprio.</p>
-                </div>
-            </a>
-            <a href="https://blog.cajee.com.br/logistica-inteligente" target="_blank" class="blog-card">
-                <div class="blog-img" style="background-image: url('https://images.unsplash.com/photo-1586191582151-f746bc18368d?auto=format&fit=crop&w=600&q=80');"></div>
-                <div class="blog-content">
-                    <span class="blog-tag">PESADOS</span>
-                    <h3>Renovação de Frota</h3>
-                    <p>Como empresas utilizam o consórcio preditivo para manter frotas sempre novas e produtivas.</p>
-                </div>
-            </a>
-            <a href="https://blog.cajee.com.br/liberdade-financeira" target="_blank" class="blog-card">
-                <div class="blog-img" style="background-image: url('https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&w=600&q=80');"></div>
-                <div class="blog-content">
-                    <span class="blog-tag">CULTURA</span>
-                    <h3>O Poder do Planejamento</h3>
-                    <p>A psicologia por trás de quem conquista grandes bens através da paciência estratégica.</p>
+                    <h3>Alavancagem de Bens</h3>
+                    <p>Aprenda a estratégia para construir uma carteira de aluguel onde o inquilino paga seu bem.</p>
+                    <span class="read-more">Quero investir →</span>
                 </div>
             </a>
         </div>
@@ -113,26 +108,26 @@
             
             <div class="modal-visual" id="modal-bg-img">
                 <div class="visual-content">
-                    <span class="badge-white" id="modal-tag">IMÓVEIS</span>
-                    <h2>Temos grupos prontos para você.</h2>
-                    <p>Análise disponível para <strong id="val-modal"></strong>.</p>
+                    <span class="badge-white" id="modal-tag">QUASE PRONTO</span>
+                    <h2>Sua simulação está pronta para envio.</h2>
+                    <p>Descubra as melhores parcelas para <strong id="val-modal"></strong>.</p>
                 </div>
             </div>
             
             <div class="modal-form-area">
                 <div class="form-header">
-                    <h3>Quase lá! 🚀</h3>
-                    <p>Preencha os dados e receba a tabela preditiva no seu WhatsApp agora.</p>
+                    <h3>Só falta um passo! 🚀</h3>
+                    <p>Preencha os dados abaixo para receber sua tabela personalizada no WhatsApp.</p>
                 </div>
                 <form id="form-final">
                     <div class="input-field">
                         <input type="text" placeholder="Seu nome" required>
                     </div>
                     <div class="input-field">
-                        <input type="tel" placeholder="Seu WhatsApp" required>
+                        <input type="tel" placeholder="Seu WhatsApp com DDD" required>
                     </div>
-                    <button type="submit" class="btn-main-gradient">RECEBER TABELA PREDITIVA</button>
-                    <p class="security-text">🔒 Conexão segura e privada</p>
+                    <button type="submit" class="btn-main-gradient">RECEBER MINHA SIMULAÇÃO</button>
+                    <p class="security-text">🔒 Suas informações estão seguras e privadas.</p>
                 </form>
             </div>
         </div>

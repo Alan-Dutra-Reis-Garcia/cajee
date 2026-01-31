@@ -283,6 +283,8 @@ input[type=range].slider-fintech:active::-webkit-slider-thumb {
     display: flex; 
     align-items: flex-end; 
     transition: background-image 0.5s ease-in-out;
+    background-size: cover;
+    background-position: center center; /* Garante que o objeto principal da foto fique no meio */
 }
 
 .modal-visual::after { 
@@ -419,4 +421,96 @@ input[type=range].slider-fintech:active::-webkit-slider-thumb {
     background: var(--p);
     color: white;
     transform: rotate(90deg);
+}
+/* --- ESTILIZAÇÃO DAS PÁGINAS DE CONTEÚDO (ARTIGOS) --- */
+
+.article-page {
+    background-color: var(--bg);
+    color: var(--text);
+    padding-top: 100px; /* Espaço para a navbar fixa */
+}
+
+.article-page .py-5 {
+    padding: 80px 0;
+    max-width: 800px; /* Largura ideal para leitura */
+    margin: 0 auto;
+}
+
+.article-page a {
+    color: var(--p);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.article-page a:hover {
+    opacity: 0.8;
+}
+
+.article-page h1 {
+    font-size: clamp(32px, 5vw, 48px);
+    margin-bottom: 20px;
+    line-height: 1.1;
+    letter-spacing: -1px;
+}
+
+.article-page .lead {
+    font-size: 20px;
+    color: var(--sub);
+    margin-bottom: 40px;
+    line-height: 1.4;
+}
+
+.content-text {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #e1e1e1;
+}
+
+.content-text p {
+    margin-bottom: 25px;
+}
+
+.content-text h3 {
+    color: white;
+    font-size: 24px;
+    margin: 40px 0 20px;
+}
+
+.content-text ul {
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+
+.content-text li {
+    margin-bottom: 12px;
+}
+
+.comparison-box {
+    border-left: 4px solid var(--p);
+    background: rgba(255,255,255,0.03) !important;
+    color: white !important;
+}
+
+.comparison-box h3 {
+    margin-top: 0 !important;
+    color: var(--p) !important;
+}
+
+/* Ajuste do botão dentro das páginas de conteúdo */
+.cta-internal-box {
+    margin-top: 60px;
+    border-radius: 30px;
+}
+
+.cta-internal-box .btn-main-gradient {
+    max-width: 300px;
+    margin: 20px auto 0;
+}
+
+/* Responsividade para Artigos */
+@media (max-width: 768px) {
+    .article-page .py-5 {
+        padding: 40px 20px;
+    }
 }
